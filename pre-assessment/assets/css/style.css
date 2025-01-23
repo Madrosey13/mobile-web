@@ -1,4 +1,4 @@
-/* The first rule in a stylesheet selects the whole html and sets up the spacing of the page */
+/* The first rule in a stylesheet is a universal selecter and rules out spacing and margining */
 
 * {
   margin: 0px;
@@ -11,7 +11,7 @@ body {
   font-size: 16px;
   line-height: 1.5em;
   background-color: #171717;
-  background-image: url(https://thomaswallace.net/projects/pre-assessment/bg-tile.jpg);
+  background-image: url("../img/bg-tile.jpg"); /*How to reference an image in your file tree*/
   background-repeat:repeat-x;
 }
 #container {
@@ -24,15 +24,30 @@ body {
   border: 1px solid #ccc;
 }
 
+#content h2{
+  color:cornflowerblue;
+  border-bottom:1px dashed #f2f2f2;
+}
+
+#content h3{
+  color:cornflowerblue;
+  border-bottom:1px dashed #f2f2f2;
+}
+
 #header{
-	background-image:url(https://thomaswallace.net/projects/pre-assessment/assessment-4.jpg);
+	background-image:url("../img/assessment-4.png");
 	padding:20px;
 }
 
 #header h1 a {
 	text-decoration:none;
 	color:#f2f2f2;
-	padding:5px;
+}
+
+#header h1 a:hover{
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: #f2f2f2;
 }
 
 #nav {
@@ -74,6 +89,7 @@ body {
 #content p {
   margin-top: 5px;
   margin-bottom: 15px;
+  overflow:hidden;
 }
 
 #content p strong{
@@ -84,7 +100,7 @@ body {
 	color:brown;
 	text-decoration:none;
 	background-color:black;
-	background-color:rgba(0,0,0,0.4);
+	background-color:rgba(0,0,0,0);
 }
 
 #content p a:hover{
@@ -107,4 +123,15 @@ body {
 #footer h6 a {
   text-decoration:none;
   color:#f2f2f2;
+}
+
+#footer h6 a:hover {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ccc;
+}
+
+.alert{
+  background-color:red;
+  padding:5px;
 }
