@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+  }
+
+  *,*:before, *:after{
+    box-sizing:inherit;
+  }
+
+.cf:before,
+.cf:after{
+    content:"";
+    display:table;
+}
+
+.cf:after{
+    clear:both;
+}
+
+main{
+    max-width:960px;
+    display:grid;
+    border:1px solid #000;
+    margin:auto;
+    grid-template-columns:repeat(4,[col-] 215fr);
+    grid-template-rows:auto;
+    grid-gap:20px;
+   /* align-content:space-around;
+    justify-content:space-between; */
+    padding:20px;
+}
+
+  header.primary{
+    background-color:red;
+    padding:5px;
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+  }
