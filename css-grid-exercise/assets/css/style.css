@@ -21,7 +21,7 @@ main{
     display:grid;
     border:1px solid #000;
     margin:auto;
-    grid-template-columns:repeat(4,[col-] 215fr);
+    grid-template-columns:repeat(4,215fr);
     grid-template-rows:auto;
     grid-gap:20px;
     padding:20px;
@@ -54,7 +54,7 @@ article.post a{
   color:aliceblue;
 }
 
-article.widget-1, article.widget-2, article.widget-3{
+article.widget-1{
   color:aliceblue;
   background-color:blueviolet;
   padding:5px;
