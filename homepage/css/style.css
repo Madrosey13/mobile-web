@@ -1,0 +1,14 @@
+html {
+    box-sizing: border-box;
+  }
+
+  *,*:before, *:after{
+    box-sizing:inherit;
+  }
+
+main{
+    max-width:960px;
+    border:1px solid #000;
+    margin:auto;
+    background-color:navy;
+}

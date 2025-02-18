@@ -6,29 +6,32 @@ html {
     box-sizing:inherit;
   }
 
-.cf:before,
-.cf:after{
-    content:"";
-    display:table;
-}
-
-.cf:after{
-    clear:both;
-}
-
 main{
     max-width:960px;
     display:grid;
     border:1px solid #000;
     margin:auto;
-    grid-template-columns:repeat(4,215fr);
+    grid-template-columns:repeat(4,1fr);
     grid-template-rows:auto;
     grid-gap:20px;
     padding:20px;
 }
 
 #content{
+  display:grid;
+  grid-template-columns:subgrid;
+  grid-template-rows:subgrid;
   background-color:azure;
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+}
+
+#primary{
+grid-column: 1 / 4;
+}
+
+#secondary{
+
 }
 
   header.primary{
