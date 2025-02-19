@@ -7,8 +7,29 @@ html {
   }
 
 main{
-    max-width:960px;
-    border:1px solid #000;
     margin:auto;
+    padding:20px;
     background-color:navy;
+    color:aliceblue;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:auto;
+    grid-gap:10px;
+    padding:10px;
+}
+
+header.primary{
+  text-align:center;
+  border-bottom:10px dashed aliceblue;
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+}
+
+section ul li a{
+  color:aliceblue;
+}
+
+#colophon{
+  text-align:center;
+  grid-column: -5 / -1;
 }
