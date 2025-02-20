@@ -25,9 +25,18 @@ header.primary{
   grid-row: 1 / 2;
 }
 
+header h4{
+  font-size:1.2em;
+}
+
+#content{
+  padding:10px;
+}
+
 section ul li a{
   color:aliceblue;
 }
+
 
 #colophon{
   text-align:center;
