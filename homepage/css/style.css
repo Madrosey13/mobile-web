@@ -16,6 +16,8 @@ main{
     grid-template-rows:auto;
     grid-gap:10px;
     padding:10px;
+    font-family:'Sour Gummy', serif;
+    font-optical-sizing: auto;
 }
 
 header.primary{
@@ -41,4 +43,11 @@ section ul li a{
 #colophon{
   text-align:center;
   grid-column: -5 / -1;
+}
+
+/* Media Queries */
+@media print{
+  body{
+    font-size:12px;
+  }
 }
