@@ -71,16 +71,85 @@ nav li{
 nav a:link, nav a:visited{
     display:block;
     padding:8px 16px;
+    border: 3px dashed #fff;
+    text-align:center;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:0.75em;
+    background:rgba(0,0,0,0.65);
+    transition: (var(--main-bg-color)) 0.5s ease;
+    color:aliceblue;
+}
+
+nav a:hover{
+    background: navy;
+}
+
+main{
+    padding:1px 20px;
+}
+
+
+
+.page-title{
+    grid-area:title;
+}
+#about {
+    grid-area:about;
+}
+#skills{
+    grid-area:skills;
+}
+#experience{
+    grid-area:education;
+}
+
+
+main.contianer{
+    display:grid;
+    grid-template-areas:
+    "title"
+    "about"
+    "education"
+    "experience"
+    ;
 }
 
 /* Media Queries */
-@media print{
-    *,
-    *::before,
-    *::after {
-        background: #fff !important;
-        color: #000 !important;
-        box-shadow:none !important;
-        text-shadow:none !important;
+@media screen and (min-width:768px){
+  
+    header.container{
+    max-width:900px;
     }
-}
+    main.container{
+    max-width:900px;
+    grid-template-columns: 36.5% auto;  
+    grid-template-areas:
+      "title title"
+      "about about"
+      "skills experience"
+      ". education"
+      ;  
+    } 
+    
+  #about{
+    display:grid;
+    gap:2em;
+    grid-template-columns: 300px 1fr auto;
+    grid-template-areas:
+      "bio details details"
+      "related related related";
+  }
+  .bio{
+    grid-area:bio;
+  }
+  .details{
+    grid-area:details;
+  }
+  .related-links{
+    grid-area:related;
+    border-bottom:1px solid #999;
+    padding-bottom:50px
+  }
+
+  }
