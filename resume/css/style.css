@@ -213,10 +213,10 @@ main.contianer{
 @media screen and (min-width:768px){
   
     header.container{
-    max-width:900px;
+    max-width:720px;
     }
     main.container{
-    max-width:900px;
+    max-width:720px;
     grid-template-columns: 36.5% auto;  
     grid-template-areas:
       "title title"
@@ -245,8 +245,17 @@ main.contianer{
     border-bottom:1px solid #999;
     padding-bottom:50px
   }
-
   }
+
+@media screen and (min-width:992px){
+    header.container{
+        max-width:960px;
+    }
+    main.container{
+        max-width:960px;
+    }
+}
+
 
 /*  Edge Case Tweaks  */
 @media only screen and (max-width:460px){
