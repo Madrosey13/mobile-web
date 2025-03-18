@@ -61,8 +61,8 @@ nav{
 
 nav ul{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding:20px 20px 0px 20px;
+    grid-template-columns: 1fr 1fr;
+    padding:20px 0px 0px 20px;
 }
 
 nav li{
@@ -85,6 +85,7 @@ nav a:link, nav a:visited{
 nav a:hover{
     background: navy;
 }
+
 
 main{
     padding:1px 20px;
@@ -225,7 +226,11 @@ main.contianer{
       ". education"
       ;  
     } 
-    
+    nav ul{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding:20px 0px 0px 20px;
+    }
   #about{
     display:grid;
     gap:2em;
@@ -253,7 +258,33 @@ main.contianer{
     }
     main.container{
         max-width:960px;
+        grid-template-columns: 36.5% auto;  
+    grid-template-areas:
+      "title title"
+      "about about"
+      "skills experience"
+      ". education"
+      ;
     }
+    #about{
+        display:grid;
+        gap:2em;
+        grid-template-columns: 300px 1fr auto;
+        grid-template-areas:
+          "bio details details"
+          "related related related";
+      }
+      .bio{
+        grid-area:bio;
+      }
+      .details{
+        grid-area:details;
+      }
+      .related-links{
+        grid-area:related;
+        border-bottom:1px solid #999;
+        padding-bottom:50px
+      }
 }
 
 
@@ -273,15 +304,15 @@ main.contianer{
 }
 
 @media only screen and (max-width:460px){
-    nav.primary li a svg{display:none;}
+    .primary li a svg{display:none;}
 }
 
 @media only screen and (max-width:395px){
-    nav.primary{
+    .primary{
         flex-direction:column;
     }
-    nav.primary a{
+    .primary a{
         display:block;
     }
-    nav.related-links li a svg{display:none;}
+    .related-links li a svg{display:inline-block;}
 }
