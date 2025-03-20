@@ -1,0 +1,17 @@
+html{
+    box-sizing:border-box;
+}
+
+*,*:before, *:after{
+    box-sizing:inherit;
+}
+
+main{
+    margin:auto;
+    padding:20px;
+    background-color:navy;
+    color:aliceblue;
+    padding:10px;
+    font-family:'Sour Gummy', serif;
+    font-optical-sizing: auto;
+}
