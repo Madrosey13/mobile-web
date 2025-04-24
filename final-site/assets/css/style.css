@@ -1,0 +1,74 @@
+/* HTML SIZING */
+html{
+    box-sizing:border-box;
+}
+
+*, *:before, *:after{
+    box-sizing:inherit;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+  }
+
+body{
+  margin:auto;
+}
+
+/* HEADER */
+header.primary{
+    text-align:center;
+    width:100%;
+    min-height:50vh;
+}
+
+header.primary nav ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    margin:0;
+    padding:0;
+}
+
+header.primary nav ul li{
+    list-style-type:none;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+header.primary nav ul li a{
+    border-radius:15px;
+    background-color:crimson;
+    color:aliceblue;
+    display:block;
+    padding: 15px 15px 15px 15px;
+    text-align:center;
+    text-decoration:none;
+    transition:0.3s;
+    text-decoration:none;
+    font-size:0.9rem;
+}
+
+header.primary nav ul li a:hover{
+    border:3px solid crimson;
+    background-color:aliceblue;
+    color:crimson;
+}
+/* CONTENT */
+
+/* FOOTER */
+#colophon{
+    background-color:crimson;
+    color:aliceblue;
+    width:100%;
+    padding:20px;
+    text-align:center;
+}
+
+#colophon p{
+    font-size:0.7rem;
+}
+/* UTILITY CLASSES */
+
+/* MEDIA QUERIES */
