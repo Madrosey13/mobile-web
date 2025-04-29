@@ -21,8 +21,9 @@ header.primary{
     padding-top:20px;
     text-align:center;
     width:100%;
-    min-height:50vh;
+    min-height:40vh;
     background-color:rgb(255, 195, 225);
+    border-bottom: 4px dashed crimson;
 }
 
 header.primary h1, header.primary h3{
@@ -52,41 +53,59 @@ header.primary nav ul li a{
     text-align:center;
     text-decoration:none;
     transition:0.3s;
-    text-decoration:none;
     font-size:0.9rem;
 }
 
 header.primary nav ul li a:hover{
-    border:3px solid crimson;
+    border:3px solid aliceblue;
     background-color:aliceblue;
     color:crimson;
 }
+
+header.primary nav ul li a.active{
+    background-color:aliceblue;
+    border:3px solid aliceblue;
+    color:crimson;
+  }  
+
 /* CONTENT */
 
 section.primary h3{
+    padding-top:20px;
     text-align:center;
     color:crimson;
+}
+
+section.primary img{
+    padding-top:20px;
 }
 
 section.primary p{
     text-align:left;
 }
 
-section.secondary div div div h3{
+section.secondary h3{
+    padding-top:30px;
     color:crimson;
 }
 
-section.secondary div div div p{
+section.secondary p{
     text-align:left;
+}
+
+section.secondary img{
+    padding-top:30px;
+    padding-bottom:30px;
 }
 
 /* FOOTER */
 #colophon{
-    background-color:crimson;
+    background-color:rgb(255, 195, 225);
     color:aliceblue;
     width:100%;
     padding:20px;
     text-align:center;
+    border-top: 4px dashed crimson;
 }
 
 #colophon p{
