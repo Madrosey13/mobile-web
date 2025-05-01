@@ -28,7 +28,7 @@ img{
 
 /* Utility Classes */
 .container{
-    max-width:420px;
+    max-width:420px; /* Tweak this more */
     margin:0 auto;
 }
 
@@ -116,17 +116,17 @@ main{
 }
 
 /* CONTENT */
-section.primary h3{
+section h3{
     padding-top:20px;
     text-align:center;
     color:var(--accent-color-1);
 }
 
-section.primary img{
+section img{
     padding-top:20px;
 }
 
-section.primary p{
+section p{
     text-align:left;
 }
 
