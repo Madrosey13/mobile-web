@@ -38,8 +38,6 @@ img{
 header.primary{
     padding-top:10px;
     text-align:center;
-    width:100%;
-    min-height:50vh;
     background-color:var(--main-bg-color);
     border-bottom: 4px dashed var(--accent-color-1);
 }
@@ -78,6 +76,7 @@ nav{
 
 nav ul{
    display:grid;
+   gap:10px;
    grid-template-columns: 1fr 1fr;
    padding:30px 10px 10px 30px;
 }
@@ -165,7 +164,7 @@ section.secondary img{
 @media screen and (min-width:768px){
     nav ul{
         display:grid;
-        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-template-columns:1fr 1fr 1fr;
         padding:20px 0px 0px 20px
     }
 }
@@ -173,7 +172,7 @@ section.secondary img{
 @media screen and (min-width:992px){
     nav ul{
         display:grid;
-        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-template-columns:1fr 1fr 1fr;
         padding:20px 0px 0px 20px;
     }
 }
