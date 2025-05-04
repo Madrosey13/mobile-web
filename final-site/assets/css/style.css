@@ -1,6 +1,6 @@
 /* Custom Properties */
 :root{
-    --main-bg-color:rgb(255, 195, 225);
+    --main-bg-color:rgb(255, 156, 205);
     --primary-type-color:black;
     --accent-color-1:crimson;
     --accent-color-2:aliceblue;
@@ -22,27 +22,27 @@ img{
   }
 
 /* Typography */
-/* Header font: Lobster */
-/* Body font: readable serif/san serif font */
+
 
 
 /* Utility Classes */
 .container{
-    max-width:420px; /* Tweak this more */
+    max-width:992px; /* Tweak this more */
     margin:0 auto;
 }
 
-
-
 /* Header */
 header.primary{
-    padding-top:10px;
+    padding:10px;
     text-align:center;
     background-color:var(--main-bg-color);
     border-bottom: 4px dashed var(--accent-color-1);
 }
 
 header.primary h1{
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+    font-size:3rem;
     display:flex;
     flex-direction:row;
     justify-content:center;
@@ -57,17 +57,24 @@ header.primary h1:after{
     flex-grow:0;
     height:3px;
     position:relative;
-    top:1.2rem;
+    top:2rem;
 }
 header.primary h1:before{
-    margin-right:3px;
+    margin-right:4px;
 }
 header.primary h1:after{
-    margin-left:3px;
+    margin-left:4px;
 }
 
 header.primary h1, header.primary h3{
     color:var(--accent-color-2);
+}
+
+header.primary h3{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size:1.4rem;
 }
 
 nav{
@@ -113,6 +120,9 @@ nav ul li a.active{
 /* Main */
 main{
     padding:1px 20px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 /* CONTENT */
@@ -164,7 +174,7 @@ section.secondary img{
 @media screen and (min-width:768px){
     nav ul{
         display:grid;
-        grid-template-columns:1fr 1fr 1fr;
+        grid-template-columns:1fr 1fr 1fr 1fr;
         padding:20px 0px 0px 20px
     }
 }
@@ -172,7 +182,7 @@ section.secondary img{
 @media screen and (min-width:992px){
     nav ul{
         display:grid;
-        grid-template-columns:1fr 1fr 1fr;
+        grid-template-columns:1fr 1fr 1fr 1fr;
         padding:20px 0px 0px 20px;
     }
 }
