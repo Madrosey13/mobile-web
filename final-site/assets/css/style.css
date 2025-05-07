@@ -154,6 +154,48 @@ section.secondary img{
     padding-bottom:30px;
 }
 
+
+/* Home Page Cards */
+section h4{
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+    font-size:2rem;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    text-align:center;
+    font-weight:300;
+    font-variant:small-caps;
+    color:var(--accent-color-1);
+}
+section h4:before,
+section h4:after{
+    background-color:var(--accent-color-1);
+    content:"\a0";
+    flex-grow:4;
+    height:2px;
+    position:relative;
+    top:1.3rem;
+}
+
+main h4:before{
+    margin-right:5px;
+}
+main h4:after{
+    margin-left:5px;
+}
+
+
+section .btn-primary{
+    background-color:var(--accent-color-1);
+    border:none;
+}
+section .btn-primary:hover{
+    background-color:var(--main-bg-color);
+    color:var(--accent-color-2);
+    border:none;
+}
+
 /* Footer */
 #colophon{
     background-color:var(--main-bg-color);
@@ -165,7 +207,13 @@ section.secondary img{
 }
 
 #colophon p{
-    font-size:0.7rem;
+    font-size:0.8rem;
+}
+
+#colophon p a{
+    font-size:1rem;
+    text-decoration:none;
+    color:var(--accent-color-1);
 }
 
 /* End of Footer */
