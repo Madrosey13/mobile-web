@@ -145,7 +145,8 @@ section p{
 
 section img{
     padding-top:20px;
-    grid-column:1 / 4;
+    margin:auto;
+    grid-column:1 / 3;
 }
 
 
