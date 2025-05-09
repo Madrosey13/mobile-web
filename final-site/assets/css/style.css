@@ -131,23 +131,6 @@ main{
     grid-template:repeat(4,auto) / 4em 1fr;
 }
 
-.slick-autoplay-toggle-button,
-.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
-.slick-dots li button .slick-dot-icon,
-.slick-dots li.slick-active button .slick-dot-icon {
-  color: white;
-}
-
-slick-next:focus .slick-next-icon,
-.slick-next:focus .slick-prev-icon,
-.slick-prev:focus .slick-next-icon,
-.slick-prev:focus .slick-prev-icon,
-.slick-dots li button:focus .slick-dot-icon:before,
-.slick-dots li.slick-active button:focus .slick-dot-icon,
-.slick-autoplay-toggle-button:focus 
-{
-    color:black;
-}
 
 section h3{
     grid-column:1 / 3;
@@ -164,7 +147,7 @@ section p{
 section img{
     padding-top:20px;
     margin:auto;
-    grid-column:1 / 3;
+    grid-column:1 / 4;
 }
 
 
@@ -204,6 +187,7 @@ section h4{
     font-weight:300;
     font-variant:small-caps;
     color:var(--accent-color-1);
+    padding:10px;
 }
 section h4:before,
 section h4:after{
