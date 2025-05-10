@@ -21,9 +21,6 @@ img{
     height:auto;
   }
 
-/* Typography */
-
-
 
 /* Utility Classes */
 .container{
@@ -145,12 +142,14 @@ section p{
 }
 
 section img{
-    padding-top:20px;
+    /*padding-top:20px;*/
     margin:auto;
     grid-column:1 / 4;
 }
 
-
+#content img{
+    padding:15px;
+}
 /* Secondary Content */
 #content2{
     display:grid;
@@ -170,8 +169,7 @@ section.secondary p{
 
 section.secondary img{
     grid-column:1 / 4;
-    padding-top:30px;
-    padding-bottom:30px;
+    padding:15px;
 }
 
 
