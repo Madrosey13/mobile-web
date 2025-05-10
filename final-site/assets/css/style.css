@@ -231,6 +231,11 @@ section .btn-primary:hover{
 
 /* Classes Page */
 /* Classes details */
+#introduction p.strong{
+    color:var(--accent-color-1);
+    font-weight:660;
+}
+
 #class-showcase dl.details{
     display:grid;
     grid-template:repeat(8,auto) / 8em 1fr;
@@ -275,6 +280,12 @@ section .btn-primary:hover{
 #advisory p{
     font-size:1rem;
     padding-bottom:20px;
+}
+
+/* Contact Page */
+#contact p.strong{
+    color:var(--accent-color-1);
+    font-weight:660;
 }
 
 /* Footer */
