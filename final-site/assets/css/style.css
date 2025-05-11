@@ -1,6 +1,6 @@
 /* Custom Properties */
 :root{
-    --main-bg-color:rgb(255, 156, 205);
+    --main-bg-color:rgb(255, 148, 218);
     --primary-type-color:black;
     --accent-color-1:crimson;
     --accent-color-2:aliceblue;
@@ -46,6 +46,7 @@ header.primary h1{
     text-align:center;
     font-weight:400;
     font-variant:small-caps;
+    text-shadow: 3px 3px var(--accent-color-1);
 }
 header.primary h1:before,
 header.primary h1:after{
@@ -71,7 +72,7 @@ header.primary h3{
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size:1.4rem;
+    font-size:1.6rem;
 }
 
 nav{
@@ -213,8 +214,11 @@ section div.button{
     flex-direction:row;
     justify-content:center;
     text-align:center;
-    font-weight:200px;
     padding-bottom:10px;
+}
+
+section div.button a{
+    font-weight:500;
 }
 
 section .btn-primary{
@@ -303,7 +307,7 @@ section .btn-primary:hover{
 #colophon p a{
     font-size:1rem;
     text-decoration:none;
-    color:var(--accent-color-1);
+    color:var(--accent-color-2);
 }
 /* End of Footer */
 
